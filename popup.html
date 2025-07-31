@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur de Passphrase</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <ul id="result" class="password-list"></ul>
+  <button id="generate">Générer</button>
+
+  <h1>Personnalisation de la passphrase</h1>
+
+  <label for="nb_mots">Nombre de mots dans la passphrase</label>
+  <select id="nb_mots">
+    <option value="2" selected>2 mots</option>
+    <option value="3">3 mots</option>
+    <option value="4">4 mots</option>
+    <option value="5">5 mots</option>
+    <option value="6">6 mots</option>
+    <option value="7">7 mots</option>
+  </select>
+
+  <label for="separateur">Séparateur entre les mots</label>
+  <select id="separateur">
+    <option value="random" selected>Aléatoire</option>
+    <option value="-">Tiret (-)</option>
+    <option value="_">Underscore (_)</option>
+    <option value=" ">Espace ( )</option>
+    <option value="*">Etoile (*)</option>
+    <option value="/">Slash (/)</option>
+    <option value="+">Plus (+)</option>
+  </select>
+
+  <label for="longueur_nombre">Nombre de chiffres à la fin</label>
+  <select id="longueur_nombre">
+    <option value="0">0 chiffre</option>
+    <option value="1">1 chiffre</option>
+    <option value="2" selected>2 chiffres</option>
+    <option value="3">3 chiffres</option>
+    <option value="4">4 chiffres</option>
+    <option value="5">5 chiffres</option>
+  </select>
+
+  <label for="caractere_special">Caractère spécial à la fin</label>
+  <select id="caractere_special">
+    <option value="random" selected>Aléatoire</option>
+    <option value="none">Aucun</option>
+    <option value="$">Dollar ($)</option>
+    <option value="!">Point d'exclamation (!)</option>
+    <option value="#">Croisillon (#)</option>
+    <option value="?">Point d'interrogation (?)</option>
+    <option value="-">Tiret (-)</option>
+    <option value="+">Plus (+)</option>
+    <option value="@">Arobase (@)</option>
+    <option value=",">Virgule (,)</option>
+    <option value=";">Point virgule (;)</option>
+    <option value=":">Deux Points (:)</option>
+    <option value="*">Etoile (*)</option>
+  </select>
+
+  <label for="longueur_minimale">Longueur minimale de la passephrase</label>
+  <input type="number" id="longueur_minimale" value="12" min="8" max="50">
+
+  <label class="checkbox-label">
+    <input type="checkbox" id="majuscule_debut" checked>
+    Majuscule au début de chaque mot
+  </label>
+
+  <label class="checkbox-label">
+    <input type="checkbox" id="majuscule_aleatoire">
+    Majuscule aléatoire dans chaque mot
+  </label>
+
+  <label class="checkbox-label">
+    <input type="checkbox" id="caracteres_accentues">
+    Autoriser les caractères accentués
+  </label>
+
+  <button id="reset-settings" type="button">Réinitialiser</button>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>

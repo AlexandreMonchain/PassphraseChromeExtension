@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Genérateur de Passphrase",
+  "version": "1.0",
+  "description": "Extension Chrome pour générer des passphrases personnalisées via l'API Passphrase.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.ico"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://passphrase.fr/"
+  ]
+}
