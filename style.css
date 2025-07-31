@@ -5,7 +5,7 @@ body {
   color: #333333;
   margin: 0;
   padding: 16px;
-  width: 400px;
+  width: 300px;
   box-sizing: border-box;
 }
 
@@ -124,4 +124,17 @@ input[type="checkbox"] {
 
 #reset-settings:hover {
   background: #f1f1f1;
+}
+
+.link-container {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+.link-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+.link-container a:hover {
+  text-decoration: underline;
 }
