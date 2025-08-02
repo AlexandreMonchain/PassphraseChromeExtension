@@ -1,12 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Genérateur de Passphrase",
+  "name": "Générateur de Passphrase",
   "version": "1.0",
   "description": "Extension Chrome pour générer des passphrases personnalisées via l'API Passphrase.",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "48": "icon.ico"
+      "16": "icons/icon_16.png",
+      "48": "icons/icon_48.png",
+      "128": "icons/icon_128.png"
     }
   },
   "permissions": ["storage"],
